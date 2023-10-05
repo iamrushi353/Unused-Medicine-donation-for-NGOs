@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: montserrat;
+        }
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 14px;
+        }
+        #container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .log-illus {
+            height: 35vw;
+            width: 90vh;
+        }
+        .log-container {
+            width: 30vw;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap:30px;
+        }
+        .grid-full {
+            grid-column: 1/-1;
+        }
+        h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            grid-column: 1/-1;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: #6c63ff;
+            font-size: 2.3rem;
+        }
+        .log-container ul li {
+            background-color: #333;
+            height: 50px;
+            width: 10vw;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+       
+
+        input,select {
+            width: 100%;
+            height: 50px;
+            padding: 5px 5%;
+            font-size: 14px;
+        }
+
+       
+
+        input[type=submit] {
+            background-color: #6c63ff;
+            color: #fff;
+            font-weight: bolder;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+        }
+        @media (max-width:900px) {
+            #left{
+                display:none;
+            }
+            .log-container {
+            width: 70vw;
+        }
+        }
+        @media (max-width:500px) {
+            .log-container {
+           grid-template-columns: auto;
+           width: 80vw;
+           gap:27px;
+        }
+        }
